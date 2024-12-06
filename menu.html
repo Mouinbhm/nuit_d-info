@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href='icon.png'>
+    <title>Climatice</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"defer></script>
+</head>
+<body>
+
+<header class="retro-header">
+    <h1 class="retro-title">Climatice : Sauve le Climat !</h1>
+    <nav class="retro-nav">
+        <a class="retro-button">Accueil</a>
+        <a href="a-propos.html" class="retro-button">À propos</a>
+        <a href="contact.html" class="retro-button">Contact</a>
+    </nav>
+
+</header>
+<main class="retro-main">
+    <section id="introduction" class="retro-section">
+        <h2>L'importance de préserver le climat</h2>
+        <p>Préserver le climat est essentiel pour garantir la vie sur Terre. Chaque geste compte pour réduire notre empreinte écologique et protéger notre environnement.</p>
+        <img src="Pixel-Earth.gif" alt="Globe pixelisé" class="pixel-image">
+    </section>
+<main class="retro-main">
+    <section id="jeu-retro" class="retro-section">
+        <h2>Jeu éducatif : Sauve le climat !</h2>
+        <canvas id="gameCanvas" width="400" height="300"></canvas>
+        <button id="startButton" class="retro-button">Commencer le jeu</button>
+        <button id="okButton" class="retro-button" style="display:none;">OK</button> 
+        <p>Récoltez les énergies renouvelables et évitez les dangers !</p>
+    </section>
+</main>   
+<section id="faits-climat" class="retro-section">
+    <h2>Faits sur le climat</h2>
+    <div class="map-navigation">
+        <button class="retro-button" onclick="showContinent('europe')">Europe</button>
+        <button class="retro-button" onclick="showContinent('asie')">Asie</button>
+        <button class="retro-button" onclick="showContinent('afrique')">Afrique</button>
+    </div>
+    <div id="continent-info" class="info-panel">
+        <p>Sélectionnez un continent pour afficher les données climatiques.</p>
+    </div>
+</section>
+</main>
+<audio id="collectSound" src="pixel-coin.mp3" preload="auto"></audio>
+<audio id="gameOverSound" src="game-over.mp3" preload="auto"></audio>
+</body>
+</html>

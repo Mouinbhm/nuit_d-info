@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.retro-header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    border-bottom: 4px solid #000;
+}
+
+.retro-title {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    animation: blink 1.5s infinite;
+    text-shadow: 2px 2px 8px #ff00ff;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.retro-nav {
+    margin-top: 20px;
+}
+
+.retro-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #222;
+    border: 4px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 0 #ff00ff;
+    transition: all 0.3s ease;
+}
+
+.retro-button:hover {
+    background-color: #ff00ff;
+    color: #000;
+    box-shadow: 4px 4px 0 #fff;
+}
+
+.retro-main {
+    padding: 20px;
+    background-color: #282c34;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.retro-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #333;
+    padding: 20px;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left; /* Align elements to the left */
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;         /* Full width of the form */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+    display: block;      /* Ensure each element is on its own line */
+    margin-left: -10px;
+    margin-right:auto;  /* Center horizontally */
+}
+
+.form-container button {
+    background-color: #2ecc71;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #27ae60;
+}
+#responseMessage {
+    margin-top: 15px;
+    font-size: 1.2em;
+}

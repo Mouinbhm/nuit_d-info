@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href='icon.png'>
+    <title>Climatice</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header class="retro-header">
+        <h1 class="retro-title">Climatice : Sauve le Climat !</h1>
+        <nav class="retro-nav">
+            <a href="menu.html" class="retro-button">Accueil</a>
+            <a href="a-propos.html" class="retro-button">À propos</a>
+            <a class="retro-button">Contact</a>
+        </nav>
+    </header>
+
+    <main class="retro-main">
+        <section id="contact" class="retro-section">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou suggestion, remplissez le formulaire ci-dessous.</p>
+            <div class="form-container">
+                <form id="contactForm">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" id="submitBtn" class="retro-button">Envoyer</button>
+                </form>
+                <div id="responseMessage" style="display: none; color: #2ecc71;"></div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
